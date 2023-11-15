@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html --port 1239"
+    "start": "parcel index.zadaca_3.html --port 1239"
   },
   "author": "",
   "license": "ISC",

@@ -4,19 +4,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.zadaca_3.css" />
+    <link rel="stylesheet" href="./styles.zadaca_3.css" />
     <title>Task List</title>
 </head>
 
 <body>
     <div class="container">
         <h1>Task List</h1>
-        <input type="text" id="newTask" placeholder="Add a new task" />
+        <p id="errorMessage" style="color: red;"></p>
+        <input type="text" id="newTask" placeholder="Add a new task" oninput="clearErrorMessage()" />
         <button id="addTaskBtn">Add Task</button>
         <ul id="taskList"></ul>
+
+
     </div>
 
-    <script src="script.zadaca_3.js"></script>
+    <script src="./script.zadaca_3.js"></script>
+
+    <style>
+        .completed {
+            text-decoration: line-through;
+            color: #888;
+        }
+    </style>
 </body>
 
 </html>
